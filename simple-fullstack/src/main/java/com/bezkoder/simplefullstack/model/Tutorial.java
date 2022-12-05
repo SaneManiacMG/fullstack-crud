@@ -8,14 +8,20 @@ public class Tutorial {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column
+    @Column(name = "title")
     private String title;
-    @Column
+    @Column(name = "description")
     private String description;
-    @Column
+    @Column(name = "published")
     private boolean published;
 
     public Tutorial() {
+    }
+
+    public Tutorial(String title, String description, boolean published) {
+        this.title = title;
+        this.description = description;
+        this.published = published;
     }
 
     public long getId() {
