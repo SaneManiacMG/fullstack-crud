@@ -24,6 +24,16 @@ public class Tutorial {
         this.published = published;
     }
 
+    @Override
+    public String toString() {
+        return "Tutorial{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", published=" + published +
+                '}';
+    }
+
     public long getId() {
         return id;
     }
