@@ -1,3 +1,17 @@
-<div class="container">
-  <router-outlet></router-outlet>
-</div> 
+<div>
+  <nav class="navbar navbar-expend navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">bezKoder</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="tutorials" class="nav-link">Tutorials</a>
+      </li>
+      <li>
+        <a routerLink="add" class="nav-link">Add</a>
+      </li>
+    </div>
+
+    <div class="container mt-3">
+      <router-outlet></router-outlet>
+    </div>
+  </nav>
+</div>
